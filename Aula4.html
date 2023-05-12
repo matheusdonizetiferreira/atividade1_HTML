@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora IMC</title>
     <style>
         h3{
@@ -13,23 +14,32 @@
 </head>
 <body>
     <header>
+    
        <div><h1>Calculadora IMC</h1></div>
+       <nav>
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Sobre</a>
+        <a href="#" class="link">Outras Ferramentas</a>
+        <a href="#" class="link">Contato</a>
+       </nav>
     </header>
     <div>
-     <form> 
+     <form id="dados">
         <h3>Preencha abaixo</h3>
-        <input type="" placeholder="Genero">
+        <input type="" placeholder="Genero:" id="Genero">
         <br><br>
-        <input type="" placeholder="Peso">
+        <input type="" placeholder="Peso:" id="Peso">
         <br><br>
-        <input type="" placeholder="Altura">
+        <input type="" placeholder="Altura:" id="Altura">
         <br><br>
-        <input type="" placeholder="Idade">
+        <input type="" placeholder="Idade:" id="Idade">
         <br><br>
-        <button>Calcular seu peso</button >
+        <button>Calcular seu peso</button>
+
      </form>
+     <h2>Seu peso ideal é_____kg</h2>
     </div>
-      <img src="https://www.saudebemestar.pt/media/89347/obesidade.jpg">
+      <img src="https://www.saudebemestar.pt/media/89347/obesidade.jpg" id="imagemIMC">
     
 </body>
 </html>
