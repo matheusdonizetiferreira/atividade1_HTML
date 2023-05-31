@@ -5,41 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Calculadora IMC</title>
     <style>
-        h3{
-            margin-bottom: 0%;
-        }
+    
+        
     </style>
 </head>
 <body>
+ 
     <header>
     
-       <div><h1>Calculadora IMC</h1></div>
+       <h1>Calculadora <span>IMC</span></h1>
        <nav>
-        <a href="#" class="link">Home</a>
+        <a href="#" class="link"><img src="./outline_home_black_24dp.png" alt="">Home</a>
         <a href="#" class="link">Sobre</a>
         <a href="#" class="link">Outras Ferramentas</a>
         <a href="#" class="link">Contato</a>
        </nav>
     </header>
-    <div>
+    <main>
+    <div class="form">
      <form id="dados">
-        <h3>Preencha abaixo</h3>
-        <input type="" placeholder="Genero:" id="Genero">
+        <h3>Preencha abaixo:</h3>
+        <input type="text" placeholder="Genero:" id="Genero">
         <br><br>
-        <input type="" placeholder="Peso:" id="Peso">
+        <input type="number" placeholder="Peso:" id="Peso">
         <br><br>
-        <input type="" placeholder="Altura:" id="Altura">
+        <input type="number" placeholder="Altura:" id="Altura">
         <br><br>
-        <input type="" placeholder="Idade:" id="Idade">
+        <input type="number" placeholder="Idade:" id="Idade">
         <br><br>
-        <button>Calcular seu peso</button>
-
+        <button type="button" onclick="getData()" id="Botãodecalcular">Calcular IMC</button>
+        <h2 id="resultado"></h2>
      </form>
-     <h2>Seu peso ideal é_____kg</h2>
     </div>
-      <img src="https://www.saudebemestar.pt/media/89347/obesidade.jpg" id="imagemIMC">
+    <div>
+    <!-- <img src="https://www.saudebemestar.pt/media/89347/obesidade.jpg" id="imagemIMC"> -->
+    <img src="https://www.meuslindosepagos.com/wp-content/uploads/2022/05/imc-600x450.webp" class="imagemhome">
+  </div>  
+  <div id="mostrador">
     
+  </div>
+</main>
+<script src="codcalculo.js"></script>
 </body>
+
 </html>
